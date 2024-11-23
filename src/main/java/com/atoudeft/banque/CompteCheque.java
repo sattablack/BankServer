@@ -58,9 +58,9 @@ public class CompteCheque extends CompteBancaire {
     public double getSolde() {
         return super.getSolde();
     }
-    public boolean transferer(double montant, String numeroCompteDestinataire){
 
-            if(montant > 0 && solde >= montant){
+    public boolean transferer(double montant, String numeroCompteDestinataire){
+        if(montant > 0 && solde >= montant){
                 solde = solde - montant;
                 if(cptTransfer.getType().equals(CHEQUE)){
                     CompteCheque cpt = (CompteCheque) cptTransfer;
