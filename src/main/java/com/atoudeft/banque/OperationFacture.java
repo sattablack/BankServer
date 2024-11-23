@@ -6,9 +6,9 @@ public class OperationFacture extends Operation {
          private String description;
 
 
-         public OperationFacture(double montant, String numeroFacture, String description) {
-        super(TypeOperation.FACTURE);
-        this.montant = montant;
+            public OperationFacture(double montant, String numeroFacture, String description) {
+                super(TypeOperation.FACTURE);
+                this.montant = montant;
         this.numeroFacture = numeroFacture;
         this.description = description;
     }
