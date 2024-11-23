@@ -1,12 +1,12 @@
 package com.atoudeft.banque;
 
 public class OperationFacture extends Operation {
-    private double montant;
-    private String numeroFacture;
-    private String description;
+         private double montant;
+         private String numeroFacture;
+         private String description;
 
 
-    public OperationFacture(double montant, String numeroFacture, String description) {
+         public OperationFacture(double montant, String numeroFacture, String description) {
         super(TypeOperation.FACTURE);
         this.montant = montant;
         this.numeroFacture = numeroFacture;
