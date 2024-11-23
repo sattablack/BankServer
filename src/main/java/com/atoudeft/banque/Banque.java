@@ -114,8 +114,8 @@ public class Banque implements Serializable {
          */
         if(numCompteClient.length() >= 6 && numCompteClient.length()<=8 && numCompteClient.matches("[A-Z0-9]+")
                 && nip.length() >=4 && nip.length() <= 5 &&nip.matches("[0-9]+") && !comptes.contains(numCompteClient)){
-            CompteClient cc = new CompteClient(numCompteClient,nip);
-            String numGenere = CompteBancaire.genereNouveauNumero();
+                 CompteClient cc = new CompteClient(numCompteClient,nip);
+                 String numGenere = CompteBancaire.genereNouveauNumero();
             CompteBancaire ch = new CompteCheque(numGenere);
             cc.ajouter(ch);
             this.comptes.add(cc);
